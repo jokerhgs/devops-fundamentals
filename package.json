@@ -6,8 +6,13 @@
   "type": "module",
   "scripts": {
     "dev": "node --watch --loader ts-node/esm src/index.ts",
+    "build:dev": "tsc --project tsconfig.json",
+    "build:prod": "tsc --project tsconfig.prod.json",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
     "format:check": "prettier --check .",
     "format:fix": "prettier --write .",
+    "exec:build": "node dist/index.js",
     "test": "jest"
   },
   "keywords": [],
