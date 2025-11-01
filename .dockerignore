@@ -1,0 +1,24 @@
+# Dependencies
+node_modules
+
+# Build outputs (generated during Docker build)
+dist
+coverage
+
+# Environment files
+.env
+.env.*
+
+# Git files
+.git
+.gitignore
+
+# Config files (not needed in Docker)
+jest.config.ts
+.prettierrc
+.prettierignore
+.eslintrc.json
+
+# Test files
+*.test.ts
+*.test.js
