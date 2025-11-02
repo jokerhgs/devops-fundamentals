@@ -1,34 +1,33 @@
 {
-  // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
-    "allowSyntheticDefaultImports": true,      // Allow default imports for modules without them
-    "forceConsistentCasingInFileNames": true,  // Disallow file name casing mismatches in imports
-    "rootDir": "./src",                        // Set the source root directory
-    "outDir": "./dist",                        // Set the output directory for compiled files
-    "module": "NodeNext",                      // Use NodeNext module system
-    "target": "ES2020",                        // Transpile to ES2020 JavaScript
-    "moduleResolution": "NodeNext",            // Resolve modules using NodeNext rules
-    "esModuleInterop": true,                   // Enable default imports from CommonJS modules
-    "types": ["node", "jest"],                 // Include Node and Jest type definitions
-    "sourceMap": true,                         // Generate source map files
-    "declaration": true,                       // Generate .d.ts declaration files
-    "declarationMap": true,                    // Generate source maps for declarations
-    "noEmit": true,                            // Do not emit output files
-    "allowImportingTsExtensions": true,        // Allow import with explicit .ts extensions
-    "noUncheckedIndexedAccess": true,          // Add undefined to element types for unchecked accesses
-    "exactOptionalPropertyTypes": true,        // Differentiate between present and undefined optional props
-    "strict": true,                            // Enable all strict type-checking options
-    "jsx": "react-jsx",                        // Use the new JSX transform for React
-    "verbatimModuleSyntax": false,             // Transform ES module syntax as needed
-    "isolatedModules": true,                   // Ensure each file can be transpiled independently
-    "noUncheckedSideEffectImports": true,      // Warn on imports with possible side effects
-    "moduleDetection": "force",                // Always treat files as modules
-    "skipLibCheck": true                       // Skip type checking of declaration files
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "module": "NodeNext",
+    "target": "ES2020",
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
+    "types": ["node", "jest"],
+    "sourceMap": true, 
+    "declaration": true,
+    "declarationMap": true,
+    "noEmit": true,                         
+    "allowImportingTsExtensions": true,     
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "strict": true,
+    "jsx": "react-jsx",
+    "verbatimModuleSyntax": false,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true
   },
   "exclude": [
-    "node_modules",      // Exclude dependencies
-    "dist",              // Exclude build output
-    "jest.config.ts",    // Exclude Jest config file
-    "**/*.test.ts"       // Exclude test files
+    "node_modules",
+    "dist",
+    "jest.config.ts",
+    "**/*.test.ts"
   ]
 }

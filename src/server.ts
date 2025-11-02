@@ -1,6 +1,6 @@
 import express from "express";
 import type { Express } from "express";
-import routes from "./routes.ts";
+import routes from "./routes.js";
 
 const app: Express = express();
 

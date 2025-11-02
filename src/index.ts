@@ -1,5 +1,5 @@
 import dotenv from "dotenv";
-import app from "./server.ts";
+import app from "./server.js";
 
 dotenv.config();
 
