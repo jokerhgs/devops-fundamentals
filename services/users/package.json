@@ -1,0 +1,39 @@
+{
+  "name": "dev-ops-fundamentals",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch --loader ts-node/esm src/index.ts",
+    "build:dev": "tsc --project tsconfig.json",
+    "build:prod": "tsc --project tsconfig.prod.json",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "format:check": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "exec:build": "node dist/index.js",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.10.0",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.4",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.9.1",
+    "@typescript-eslint/eslint-plugin": "^8.46.2",
+    "@typescript-eslint/parser": "^8.46.2",
+    "eslint": "^9.38.0",
+    "jest": "^30.2.0",
+    "prettier": "^3.6.2",
+    "ts-jest": "^29.4.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

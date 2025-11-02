@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "allowImportingTsExtensions": false, // must be false for emitted JS
+    "outDir": "dist",
+    "sourceMap": false, // optional, disable in prod
+    "declaration": false,
+    "declarationMap": false
+  },
+  "include": ["src/**/*"]
+}

@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "module": "NodeNext",
+    "target": "ES2020",
+    "moduleResolution": "NodeNext",
+    "esModuleInterop": true,
+    "types": ["node", "jest"],
+    "sourceMap": true, 
+    "declaration": true,
+    "declarationMap": true,
+    "noEmit": true,                         
+    "allowImportingTsExtensions": true,     
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "strict": true,
+    "jsx": "react-jsx",
+    "verbatimModuleSyntax": false,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "jest.config.ts",
+    "**/*.test.ts"
+  ]
+}

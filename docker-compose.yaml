@@ -1,0 +1,17 @@
+# Docker Compose file defining the microservices for the application:
+services:
+  users:
+    build: ./services/users # Build context for the users service
+    ports:
+      - "3001:4000" # Map host port 3001 to container port 4000
+    environment:
+      - PORT=4000 # Port that the service listens on inside the container
+      - SERVICE_NAME=users # Name of the service
+
+  products:
+    build: ./services/products # Build context for the products service
+    ports:
+      - "3002:4000" # Map host port 3002 to container port 4000
+    environment:
+      - PORT=4000 # Port that the service listens on inside the container
+      - SERVICE_NAME=products # Name of the service
